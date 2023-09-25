@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <!--boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
+    <!--charts-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+     <h1>¡Bienvenido a tu base de datos!</h1>
+    </header>
+    
+    <div class="container">
+        <!-- formulario ventas -->
+        <form id="sales-form">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="text" id="month" placeholder="Mes" required>
+            <input type="number" id="amount" placeholder="Cantidad" required>
+            <button type="submit">Agregar Venta</button>
+        </form>
+    
+        <!--gráfico -->
+        <div class="chart-container">
+            <canvas id="monthly-chart"></canvas>
+        </div>
+    
+        <!-- lista de ventas -->
+        <ul id="sales-list"></ul>
+    </div>
+        
+        
+    <footer>
+        <p> &copy; 2023</p>
+     </footer>
+    
+    
+    <script src="script.js"></script>
+    
+    <!- - Bootstrap CSS -- >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
